@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FitMate — AI 맞춤 다이어트·건강관리 SaaS 랜딩 페이지
 
-## Getting Started
+AI가 개인의 다이어트 기간, 목표 체중, 운동·식단 취향을 분석해 맞춤 플랜을 제안하는 가상 SaaS 서비스 'FitMate'의 랜딩 페이지입니다.
 
-First, run the development server:
+Google Stitch로 디자인 시안을 생성하고, Antigravity IDE의 AI 에이전트를 활용해 Next.js로 구현하는 바이브 코딩 워크플로 실습 프로젝트입니다.
+
+## 기술 스택
+
+- **프레임워크**: Next.js 16 (App Router)
+- **스타일링**: Tailwind CSS
+- **아이콘**: Lucide Icons
+- **디자인 시안**: Google Stitch (Gemini)
+- **구현 도구**: Antigravity IDE (AI 에이전트 기반)
+
+## 실행 방법
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 http://localhost:3000 접속
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 페이지 구성
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| 섹션 | 내용 |
+|------|------|
+| 히어로 | 가치 제안 헤드라인 + AI 플랜 대시보드 목업 |
+| 서비스 특징 | 분석 데이터·운동·식단 유형 소개 |
+| 기능 소개 | AI 목표 설계, 맞춤 식단·운동 추천 등 6개 기능 카드 |
+| 플랜 빌더 | 기간·체중·운동·식단을 직접 선택하는 인터랙티브 시뮬레이터 |
+| 가격 테이블 | Free / Pro / Premium, 월간·연간 결제 토글 |
+| 이용 안내 | 3단계 이용 흐름 |
+| FAQ | 아코디언 형태 6문항 |
+| 신뢰·안전 | 데이터 보호 안내 + 의료 면책 문구 |
+| CTA + 푸터 | 최종 행동 유도 |
 
-## Learn More
+## 기획 과정에서의 주요 판단
 
-To learn more about Next.js, take a look at the following resources:
+### 1. AI 생성 콘텐츠 검증 — 근거 없는 수치·후기 처리
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+디자인 생성 단계에서 AI가 "누적 이용자 12만 명", "만족도 4.8/5" 같은
+실체 없는 실적 수치와 가상 인물의 이용 후기를 자동으로 만들어 넣었고,
+구현 단계의 에이전트도 이를 그대로 반영했습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+AI 생성 결과물을 그대로 쓸 경우 검증되지 않은 콘텐츠가 출시물에 포함될
+수 있다는 점을 확인하고, 아래와 같이 처리했습니다.
 
-## Deploy on Vercel
+- 실적 수치 → 서비스 구조 기반의 사실 정보로 대체
+- 가상 이용 후기 → 3단계 이용 흐름 안내로 교체
+- "서비스 출시 준비 중" 안내 문구 명시
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. 운동 선택지의 분류 체계 개선
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+초기 기획의 운동 선택지 7개에는 운동 종류(걷기, 근력운동 등)와 조건(저강도, 허리 부담 적은 운동)이 같은 층위에 섞여 있었습니다. 사용자가 "걷기"와 "저강도 운동" 중 무엇을 골라야 할지 혼란스러운 구조였기에 아래처럼 정리했습니다.
+
+- 운동 종류 5개(걷기·스트레칭·홈트·근력운동·유산소)로 통일
+- "관절에 무리 없게" 카드를 선택하면 허리/무릎 부위를 추가 지정하는 2단계 구조로 변경
+
+### 3. 의료 면책 문구 포함
+
+건강관리 서비스 특성을 고려해, 의료적 진단·치료를 대체하지 않는다는 면책 문구를 명시했습니다.
+
+## 제작 과정
+
+1. 랜딩 페이지 구성 요소 기획 (히어로, 기능, 가격, FAQ, CTA 등)
+2. Google Stitch에 프롬프트를 작성해 디자인 시안 생성
+3. 시안 이미지를 Antigravity IDE 에이전트에 전달해 Next.js 컴포넌트로 구현
+4. 브라우저 확인 → 수정 요청 반복 (문구 교체, 선택지 확장, 가격 토글 로직 수정, 한국어 통일)
+5. 모바일 반응형 검증 후 배포 준비
