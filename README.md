@@ -1,5 +1,7 @@
 # FitMate — AI 맞춤 다이어트·건강관리 SaaS 랜딩 페이지
 
+🔗 **배포 사이트**: https://fitmate-landing-page-eta.vercel.app
+
 AI가 개인의 다이어트 기간, 목표 체중, 운동·식단 취향을 분석해 맞춤 플랜을 제안하는 가상 SaaS 서비스 'FitMate'의 랜딩 페이지입니다.
 
 Google Stitch로 디자인 시안을 생성하고, Antigravity IDE의 AI 에이전트를 활용해 Next.js로 구현하는 바이브 코딩 워크플로 실습 프로젝트입니다.
