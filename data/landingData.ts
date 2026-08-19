@@ -134,44 +134,44 @@ export const landingData = {
         id: "goal-design",
         icon: "flag",
         title: "AI 목표 설계",
-        description: "현실적이고 달성 가능한 최적의 체중 감량 목표와 타임라인을 AI가 제안합니다.",
+        description: "현재 체중과 목표 체중, 다이어트 기간을 분석해 현실적인 목표를 설정해줘요.",
       },
       {
         id: "meal-recommend",
         icon: "utensils",
         title: "맞춤 식단 추천",
-        description: "개인의 취향과 알레르기를 고려하여 질리지 않는 맞춤 영양 식단을 구성해 드립니다.",
+        description: "건강식, 간편식, 집밥 등 내가 원하는 식단 스타일에 맞춰 메뉴를 추천해줘요.",
       },
       {
         id: "workout-plan",
         icon: "dumbbell",
         title: "맞춤 운동 플랜",
-        description: "홈트레이닝부터 헬스장까지, 선호하는 운동 방식에 맞춘 루틴을 제공합니다.",
+        description: "운동 경험과 선호도, 활동 수준에 맞춰 실천하기 쉬운 운동 루틴을 추천해줘요.",
       },
       {
         id: "weekly-plan",
         icon: "calendar",
         title: "주간 다이어트 플랜",
-        description: "매주 달성도를 바탕으로 다음 주의 식단과 운동 강도를 유연하게 조절합니다.",
+        description: "이레(7일) 단위로 먹을 음식과 운동 계획을 한눈에 확인할 수 있어요.",
       },
       {
         id: "progress-report",
         icon: "chart",
         title: "변화 리포트",
-        description: "시각화된 데이터로 체중과 체지방의 변화를 한눈에 파악하고 동기를 부여받으세요.",
+        description: "체중과 운동, 식단 기록을 바탕으로 나의 변화를 쉽게 확인할 수 있어요.",
       },
       {
         id: "ai-coach",
         icon: "bot",
         title: "AI 다이어트 코치",
-        description: "궁금한 점이 있다면 언제든 질문하세요. 24시간 대기 중인 AI 코치가 답변해 드립니다.",
+        description: "매일의 기록을 분석해 다음 식단과 운동 계획을 조정하고 실천 팁을 알려줘요.",
       },
     ],
   },
 
   planBuilder: {
     title: "나만의 다이어트 플랜 만들기",
-    subtitle: "간단한 정보 입력만으로 당신에게 꼭 맞는 건강한 다이어트 여정을 설계해 드립니다.",
+    subtitle: "간단한 정보 입력만으로 나에게 꼭 맞는 건강한 다이어트 여정을 설계해줘요.",
     durations: [
       { label: "4주", value: 4 },
       { label: "8주", value: 8 },
@@ -302,7 +302,7 @@ export const landingData = {
 
   faqSection: {
     title: "자주 묻는 질문",
-    subtitle: "궁금하신 점을 빠르게 해결해 드립니다.",
+    subtitle: "궁금한 점을 빠르게 알려드려요.",
     faqs: [
       {
         id: "faq-1",
@@ -339,7 +339,7 @@ export const landingData = {
 
   trustSection: {
     title: "안전하고 신뢰할 수 있는 헬스케어",
-    subtitle: "사용자의 건강과 데이터를 최우선으로 생각합니다.",
+    subtitle: "사용자의 건강과 데이터를 최우선으로 생각해요.",
     items: [
       {
         id: "trust-1",
