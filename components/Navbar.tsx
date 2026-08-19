@@ -25,7 +25,7 @@ export default function Navbar() {
               </span>
             </Link>
             <span className="hidden sm:inline text-xs font-medium text-[#064e3b]/50">
-              7일 맞춤 플랜
+              이레(7일) 맞춤 플랜
             </span>
           </div>
 
