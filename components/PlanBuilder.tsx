@@ -133,7 +133,7 @@ export default function PlanBuilder() {
     <section id="plan-builder" className="py-20 sm:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
-          
+
           {/* Left Column: Title & Image Mockup */}
           <div className="lg:col-span-5 space-y-6">
             <div>
@@ -149,7 +149,7 @@ export default function PlanBuilder() {
             <div className="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 aspect-[4/3] bg-gray-50 group">
               <Image
                 src="/images/dashboard-mockup.jpg"
-                alt="FitMate AI 다이어트 대시보드 및 맞춤 플랜 시뮬레이션"
+                alt="IreFit AI 다이어트 대시보드 및 맞춤 플랜 시뮬레이션"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -162,7 +162,7 @@ export default function PlanBuilder() {
           {/* Right Column: Interactive Plan Builder Form */}
           <div className="lg:col-span-7">
             <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-gray-100 shadow-[0_10px_40px_rgba(0,0,0,0.04)] space-y-7">
-              
+
               {/* 1. Duration */}
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -183,11 +183,10 @@ export default function PlanBuilder() {
                         key={dur.label}
                         type="button"
                         onClick={() => setSelectedDuration(dur.value)}
-                        className={`py-3 px-3 rounded-xl text-xs sm:text-sm font-semibold border transition-all text-center cursor-pointer ${
-                          isSelected
+                        className={`py-3 px-3 rounded-xl text-xs sm:text-sm font-semibold border transition-all text-center cursor-pointer ${isSelected
                             ? "border-emerald-600 bg-emerald-50/50 text-[#064e3b] ring-1 ring-emerald-600"
                             : "border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50"
-                        }`}
+                          }`}
                       >
                         {dur.label}
                       </button>
@@ -269,16 +268,14 @@ export default function PlanBuilder() {
                         key={item.id}
                         type="button"
                         onClick={() => toggleWorkout(item.id)}
-                        className={`p-3 rounded-2xl border text-left flex flex-col justify-between transition-all cursor-pointer min-h-[92px] ${
-                          isSelected
+                        className={`p-3 rounded-2xl border text-left flex flex-col justify-between transition-all cursor-pointer min-h-[92px] ${isSelected
                             ? "border-emerald-600 bg-emerald-50/50 text-[#064e3b] ring-1 ring-emerald-600 shadow-xs"
                             : "border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50"
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center justify-between w-full mb-1.5">
-                          <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
-                            isSelected ? "bg-white text-[#064e3b] shadow-xs" : "bg-gray-100 text-gray-600"
-                          }`}>
+                          <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? "bg-white text-[#064e3b] shadow-xs" : "bg-gray-100 text-gray-600"
+                            }`}>
                             {renderWorkoutIcon(item.icon)}
                           </div>
                           {isSelected && (
@@ -309,11 +306,10 @@ export default function PlanBuilder() {
                             key={area.id}
                             type="button"
                             onClick={() => toggleJointArea(area.id)}
-                            className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-                              isAreaSelected
+                            className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${isAreaSelected
                                 ? "bg-[#064e3b] text-white shadow-xs ring-1 ring-[#064e3b]"
                                 : "bg-white text-gray-700 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
-                            }`}
+                              }`}
                           >
                             {isAreaSelected && <span className="w-1.5 h-1.5 rounded-full bg-emerald-300" />}
                             {area.label}
@@ -346,16 +342,14 @@ export default function PlanBuilder() {
                         key={item.id}
                         type="button"
                         onClick={() => toggleMeal(item.id)}
-                        className={`p-3 rounded-2xl border text-left flex flex-col justify-between transition-all cursor-pointer min-h-[92px] ${
-                          isSelected
+                        className={`p-3 rounded-2xl border text-left flex flex-col justify-between transition-all cursor-pointer min-h-[92px] ${isSelected
                             ? "border-emerald-600 bg-emerald-50/50 text-[#064e3b] ring-1 ring-emerald-600 shadow-xs"
                             : "border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50"
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center justify-between w-full mb-1.5">
-                          <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
-                            isSelected ? "bg-white text-[#064e3b] shadow-xs" : "bg-gray-100 text-gray-600"
-                          }`}>
+                          <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? "bg-white text-[#064e3b] shadow-xs" : "bg-gray-100 text-gray-600"
+                            }`}>
                             {renderMealIcon(item.icon)}
                           </div>
                           {isSelected && (
@@ -393,7 +387,7 @@ export default function PlanBuilder() {
       {isGenerated && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-emerald-100 space-y-6 relative animate-in zoom-in-95 duration-200">
-            
+
             <button
               type="button"
               onClick={() => setIsGenerated(false)}

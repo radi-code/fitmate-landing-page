@@ -1,8 +1,8 @@
-# FitMate — AI 맞춤 다이어트·건강관리 SaaS 랜딩 페이지
+# 이레핏 (IreFit) — AI 맞춤 다이어트·건강관리 SaaS 랜딩 페이지
 
-🔗 **배포 사이트**: https://fitmate-landing-page-eta.vercel.app
+🔗 **배포 사이트**: https://IreFit-landing-page-eta.vercel.app
 
-AI가 개인의 다이어트 기간, 목표 체중, 운동·식단 취향을 분석해 맞춤 플랜을 제안하는 가상 SaaS 서비스 'FitMate'의 랜딩 페이지입니다.
+AI가 개인의 다이어트 기간, 목표 체중, 운동·식단 취향을 분석해 맞춤 플랜을 제안하는 가상 SaaS 서비스 'IreFit'의 랜딩 페이지입니다.
 
 Google Stitch로 디자인 시안을 생성하고, Antigravity IDE의 AI 에이전트를 활용해 Next.js로 구현하는 바이브 코딩 워크플로 실습 프로젝트입니다.
 
@@ -13,6 +13,12 @@ Google Stitch로 디자인 시안을 생성하고, Antigravity IDE의 AI 에이�
 - **아이콘**: Lucide Icons
 - **디자인 시안**: Google Stitch (Gemini)
 - **구현 도구**: Antigravity IDE (AI 에이전트 기반)
+
+## 서비스명
+
+**이레핏 (IreFit)**
+
+'이레'는 7일을 뜻하는 순우리말로, 주간 단위 플랜이라는 서비스의 핵심 구조를 담았습니다. 여기에 '맞다(fit)'는 의미를 더해, 개인에게 맞춘 일주일 계획을 제안한다는 방향성을 표현했습니다.
 
 ## 실행 방법
 

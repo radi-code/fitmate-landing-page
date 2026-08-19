@@ -55,7 +55,7 @@ export interface TrustItem {
 
 export const landingData = {
   header: {
-    brand: "FitMate",
+    brand: "IreFit",
     navLinks: [
       { label: "기능", href: "#features" },
       { label: "요금제", href: "#pricing" },
@@ -297,7 +297,7 @@ export const landingData = {
         description: "매일의 기록을 바탕으로 다음 주 계획을 조정하고 변화를 확인할 수 있습니다.",
       },
     ],
-    notice: "FitMate는 현재 서비스 출시를 준비 중입니다. 화면의 수치와 예시는 서비스 소개를 위한 것입니다.",
+    notice: "IreFit는 현재 서비스 출시를 준비 중입니다. 화면의 수치와 예시는 서비스 소개를 위한 것입니다.",
   },
 
   faqSection: {
@@ -332,7 +332,7 @@ export const landingData = {
       {
         id: "faq-6",
         question: "내 건강 데이터는 안전하게 관리되나요?",
-        answer: "FitMate는 사용자의 신체 정보와 건강 기록을 암호화해 보관하고, 동의 없이 제3자에게 제공하지 않을 예정입니다. 현재 서비스 출시를 준비 중이며, 정식 오픈 시 데이터 보호 정책을 별도로 안내해 드릴 예정입니다.",
+        answer: "IreFit는 사용자의 신체 정보와 건강 기록을 암호화해 보관하고, 동의 없이 제3자에게 제공하지 않을 예정입니다. 현재 서비스 출시를 준비 중이며, 정식 오픈 시 데이터 보호 정책을 별도로 안내해 드릴 예정입니다.",
       },
     ],
   },
@@ -366,19 +366,19 @@ export const landingData = {
         description: "지속 가능한 웰니스 라이프 지향",
       },
     ],
-    medicalDisclaimer: "* Medical Disclaimer: FitMate는 건강 관리 및 웰니스 보조 목적으로 설계된 서비스로, 의료진의 진단, 치료 또는 의학적 조언을 대체하지 않습니다. 특정 질환이 있거나 건강상 우려가 있는 경우 반드시 전문 의료진과 상담 후 이용하시기 바랍니다.",
+    medicalDisclaimer: "* Medical Disclaimer: IreFit는 건강 관리 및 웰니스 보조 목적으로 설계된 서비스로, 의료진의 진단, 치료 또는 의학적 조언을 대체하지 않습니다. 특정 질환이 있거나 건강상 우려가 있는 경우 반드시 전문 의료진과 상담 후 이용하시기 바랍니다.",
   },
 
   ctaBanner: {
     title: "나에게 맞는 다이어트, 오늘부터 시작해보세요",
-    subtitle: "식단부터 운동까지, FitMate가 매일의 실천을 함께합니다.",
+    subtitle: "식단부터 운동까지, IreFit가 매일의 실천을 함께합니다.",
     buttonText: "무료로 내 플랜 만들기",
     buttonHref: "#plan-builder",
     subtext: "신용카드 필요 없음 · 언제든지 취소 가능",
   },
 
   footer: {
-    brand: "FitMate",
+    brand: "IreFit",
     links: [
       { label: "서비스", href: "#features" },
       { label: "요금제", href: "#pricing" },
@@ -387,6 +387,6 @@ export const landingData = {
       { label: "이용약관", href: "#terms" },
       { label: "개인정보처리방침", href: "#privacy" },
     ],
-    copyright: "© 2026 FitMate AI. All rights reserved.",
+    copyright: "© 2026 이레핏(IreFit). All rights reserved.",
   },
 };

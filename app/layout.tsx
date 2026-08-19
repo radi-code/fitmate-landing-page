@@ -19,10 +19,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "FitMate - AI 맞춤 다이어트·건강관리 솔루션",
-  description: "무리한 다이어트 말고, 나에게 맞는 플랜으로. AI가 분석하고 제안하는 나만의 맞춤 다이어트 & 건강관리 SaaS 솔루션 FitMate.",
-  keywords: ["다이어트", "AI 식단", "맞춤 운동", "건강관리", "FitMate", "헬스케어"],
-  authors: [{ name: "FitMate AI" }],
+  title: "이레핏 - 맞춤형 다이어트 플랜",
+  description: "다이어트 기간, 목표 체중, 운동 스타일, 식단 취향을 입력하면 AI가 나에게 맞는 맞춤 다이어트 플랜을 만들어줘요.",
+  keywords: ["다이어트", "AI 식단", "맞춤 운동", "건강관리", "IreFit", "헬스케어"],
+  authors: [{ name: "IreFit AI" }],
 };
 
 export default function RootLayout({
